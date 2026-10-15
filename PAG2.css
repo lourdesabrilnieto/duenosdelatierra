@@ -1,0 +1,72 @@
+*{
+   box-sizing: border-box;
+}
+
+body {
+color: #513224;
+background-color: #F0EBD5;
+background-image: url(textura.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+ @import url(https://db.onlinewebfonts.com/c/25df0280fec38f4b5ba0acf8fb265940?family=Lucidity+Expand);
+font-family: "Lucidity Expand";
+    src: url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.eot");
+    src: url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.svg#Lucidity Expand")format("svg");
+  
+   margin: 0;
+
+}
+
+
+footer {
+   color: #F0EBD588;
+   position: absolute;
+   bottom: 1%;
+   right: 1%;
+   }
+
+#naturaleza{
+position: absolute;
+color: #FAF7D9cc;
+opacity: 100%;
+letter-spacing: 1px;
+width: 100%;
+padding: 0px 20px 0px 20px;
+text-align: justify;
+text-align-last: justify;
+ transition: all 1s ease;
+}
+
+#machiatras #machiatrasimg{
+   background-image: url(machiGIF.gif);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border: 0px;
+background-color: transparent;
+position: absolute;
+bottom: 4%;
+left: 2%;
+}
+
+#machiatrasimg{
+   width: 4.7%;
+   height: 11%;
+   padding: 0;
+cursor: pointer;
+}
+
+.vid{
+display: flex;
+width: 80%;
+top: 9vh;
+position: absolute;
+left: 10%;
+z-index: 1;
+}

@@ -1,0 +1,183 @@
+*{
+   box-sizing: border-box;
+}
+
+body {
+color: #513224;
+background-color: #F0EBD5;
+background-image: url(textura.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+ @import url(https://db.onlinewebfonts.com/c/25df0280fec38f4b5ba0acf8fb265940?family=Lucidity+Expand);
+font-family: "Lucidity Expand";
+    src: url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.eot");
+    src: url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.svg#Lucidity Expand")format("svg");
+  
+   margin: 0;
+
+}
+
+
+footer {
+   color: #F0EBD588;
+   position: absolute;
+   bottom: 1%;
+   right: 1%;
+   }
+
+#naturaleza{
+position: absolute;
+color: #FAF7D9cc;
+opacity: 100%;
+letter-spacing: 1px;
+width: 100%;
+padding: 0px 20px 0px 20px;
+text-align: justify;
+text-align-last: justify;
+ transition: all 1s ease;
+}
+
+.mapafoto{
+display: block;
+width: 90%;
+left: 5%;
+position: absolute;
+z-index: 1;
+opacity: 80%;
+ transition: 3s ease;
+
+}
+
+.mapafoto-Zoom{
+   transform: scale(2) translateY(-20%) translateX(-9%);
+  
+}
+
+
+
+.iconoClick:hover{
+  cursor: pointer;
+}
+
+.iconoClick{
+   
+   width: 15%;
+   height: 15%;
+   position: absolute;
+   top: 63vh;
+   left: 88vh;
+   z-index: 3;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   animation-name: icono;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes icono{
+   0%{
+   }
+   100%{
+      scale: 1.1;
+   }
+
+}
+
+
+.ajusteicono1{
+   width: 20%;
+display: inline;
+}
+
+
+.ajustetexto{
+   color: #513224;
+  @import url(https://db.onlinewebfonts.com/c/4a65a044949f002884a712e1135fb1cf?family=Yuji+Boku);
+  @font-face {
+    font-family: "Yuji Boku";
+    src: url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.eot");
+    src: url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.svg#Yuji Boku")format("svg");
+}
+font-family: "Yuji Boku";
+font-size: 0.8vw;
+font-weight: bold;
+margin-top: 0.5vh;
+visibility: hidden;
+}
+
+
+#machiatras #machiatrasimg{
+   background-image: url(machiGIF.gif);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border: 0px;
+background-color: transparent;
+position: absolute;
+bottom: 4%;
+left: 2%;
+}
+
+#machiatrasimg{
+   width: 4.7%;
+   height: 11%;
+   padding: 0;
+cursor: pointer;
+}
+
+.cardenal{
+   width: 150px;
+}
+#c1, #c2, #c3, #c4{
+    position: absolute;
+   display: flex;
+
+}
+
+#c1{
+   top: 45%;
+   left: 1%;
+}
+#c2{
+   top: 7%;
+   left: 45%;
+   transform: rotate(90deg);
+
+}
+#c3{
+  transform: rotate(-180deg);
+  right:1%;
+  top: 45%;
+}
+#c4{
+bottom: 1%;
+left: 46%;
+transform: rotate(-90deg);
+}
+
+.bordemapa{
+
+   width: 80%;
+   top: 17vh;
+position: absolute;
+left: 18vh;
+height: 72%;
+overflow: hidden;
+z-index: 2;
+display: inline-block;
+
+}

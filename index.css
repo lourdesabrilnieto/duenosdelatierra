@@ -1,0 +1,413 @@
+*{
+   box-sizing: border-box;
+}
+
+body {
+color: #513224;
+background-color: #F0EBD5;
+background-image: url(tramafinal4.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+ @import url(https://db.onlinewebfonts.com/c/25df0280fec38f4b5ba0acf8fb265940?family=Lucidity+Expand);
+font-family: "Lucidity Expand";
+    src: url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.eot");
+    src: url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/25df0280fec38f4b5ba0acf8fb265940.svg#Lucidity Expand")format("svg");
+  
+   margin: 0;
+
+}
+
+
+.encabezado {
+   position:absolute;
+   top: 0;
+   width: 100%;
+   color: #513224;
+   background-color: #F0EBD566;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 0.7em;
+   padding: 0;
+   transition: all 1s ease;
+}
+
+.encabezadoOculto {
+   transform: translateY(-200px);
+   opacity: 0.7;
+}
+
+
+#titulo{
+   margin: 0;
+   padding: 10px 20px;
+
+}
+
+#campos{
+display: flex;
+align-items: center;
+flex-direction: row;
+
+}
+
+#t1{
+padding: 0px 10px 0px 10px;
+}
+
+#t2{
+padding: 0px 5px 5px 5px;
+}
+
+#t3{
+padding: 3px 20px 0px 10px;
+}
+
+footer {
+    color: #F0EBD588;
+   position: absolute;
+   bottom: 1%;
+   right: 1%;
+   }
+
+.comunidades{
+   position: absolute;
+   color: #FAF7D9cc;
+   opacity: 0%;
+letter-spacing: 1px;
+width: 100%;
+padding: 0px 20px 0px 20px;
+text-align: justify;
+text-align-last: justify;
+   transition: all 0s ease;
+}
+.viaje{
+   position: absolute;
+   color: #FAF7D9cc;
+   opacity: 0%;
+letter-spacing: 1px;
+width: 100%;
+padding: 0px 20px 0px 20px;
+text-align: justify;
+text-align-last: justify;
+   transition: all 0s ease;
+}
+
+.comunidadesMostrar{
+   position: absolute;
+   color: #FAF7D9cc;
+   opacity: 100%;
+letter-spacing: 1px;
+width: 100%;
+padding: 0px 75px 0px 75px;
+text-align: justify;
+text-align-last: justify;
+ transition: all 1s ease;
+}
+
+.viajeMostrar{
+   position: absolute;
+   color: #FAF7D9cc;
+   opacity: 100%;
+letter-spacing: 1px;
+width: 100%;
+padding: 0px 75px 0px 75px;
+text-align: justify;
+text-align-last: justify;
+ transition: all 1s ease;
+
+}
+
+
+
+.machi{
+   position:absolute;
+   display: flex;
+   left: 60vh;
+   top: 2vh;
+   z-index: 1;
+   transition: all 0.5s ease;
+  
+}
+
+.machiCostado{
+
+   transform: translateX(70%);
+   
+}
+
+.machiCostado.machi-hover{
+   transform: translateX(70%) scale(1.05);
+}
+
+.ladoiz{
+position: absolute;
+margin-left: 5%;
+flex-direction: column;
+display: flex;
+width: 50%;
+float: left;
+z-index: 3;
+justify-content: left;
+align-items: left;
+visibility: hidden;
+margin-top: 10%;
+}
+
+#machi2{
+   width: 37%; /*el porcentaje que ocupa la imagen dentro del div*/
+   animation-name: machimovimiento;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes machimovimiento{
+     0%{
+   }
+   100%{
+      scale: 1.02;
+   }
+
+}
+
+.machi-hover{
+   transform: scale(1.04);
+}
+
+/*no se aplica el hover ggggg*/
+
+#machi2:hover{
+   cursor: pointer;
+}
+
+#planos{
+   width: 150%;
+
+}
+
+.planos{
+   position:absolute;
+   display: flex;
+   margin-left: 12.5%;
+   margin-top: 9.5%;
+   width: 50%;
+   justify-content: left;
+   align-items: left;
+   float: left;
+   z-index: 2;
+  
+}
+
+
+.paginas{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 7.7vw;
+   margin-top: 15%;
+   margin-bottom: 10%;
+   z-index: 4;
+   
+}
+
+.paginas button{
+ background-color: transparent;
+ color:#513224;
+ border: 0;
+font-family: "Lucidity Expand";
+font-weight: bold;
+font-size: 1.2vw;
+cursor: pointer;
+text-shadow: 2px 2px 4px #FAF7D9;
+}
+
+ button:hover{
+   text-shadow: 2px 2px 4px #FAF7D9;
+}
+
+.Cambio .Ocultar{
+   display: none;
+}
+
+.Cambio:hover .Mostrar{
+   display: none;
+}
+
+.Cambio:hover .Ocultar{
+   display: inline;
+   font-size: 1vw;
+}
+
+.idma{
+   font-family: "Lucidity Expand";
+   margin: 0.5%;
+   font-size: 1.2vw;
+   text-shadow: 2px 2px 4px #FAF7D977;
+   
+}
+
+.ides{
+  @import url(https://db.onlinewebfonts.com/c/4a65a044949f002884a712e1135fb1cf?family=Yuji+Boku);
+  @font-face {
+    font-family: "Yuji Boku";
+    src: url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.eot");
+    src: url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4a65a044949f002884a712e1135fb1cf.svg#Yuji Boku")format("svg");
+}
+font-family: "Yuji Boku";
+text-shadow: 2px 2px 4px #FAF7D977;
+gap: 1%;
+text-align: justify;
+text-align-last: justify;
+margin: 0%;
+font-size: 1.4vw;
+}
+
+.p1{
+font-family: "Yuji Boku";
+position: absolute;
+left: 7vh;
+display: flex;
+width: 45vh;
+text-align: justify;
+text-align-last: justify;
+flex-direction: column;
+font-size: 1.5vw;
+top: 22vh;
+letter-spacing: 0.1em;
+}
+
+.p2{
+font-family: "Yuji Boku";
+position: absolute;
+left: 30vh;
+display: flex;
+width: 35vh;
+text-align: justify;
+text-align-last: justify;
+flex-direction: column;
+font-size: 1.5vw;
+top: 34vh;
+letter-spacing: 0.1em;
+word-spacing: 0.5em;
+}
+
+.p3{
+font-family: "Yuji Boku";
+position: absolute;
+left: 4vh;
+width: 55vh;
+font-size: 1.5vw;
+top: 50vh;
+letter-spacing: 0.1em;
+}
+
+.p4{
+font-family: "Yuji Boku";
+position: absolute;
+left: 4vh;
+width: 51vh;
+font-size: 1.5vw;
+top: 54.5vh;
+text-align: justify;
+text-align-last: justify;
+}
+
+.idmat{
+   font-family: "Lucidity Expand";
+   font-size: 1.2vw;
+   text-shadow: 2px 2px 4px #FAF7D977;
+   display: inline;
+}
+
+.p5{
+font-family: "Yuji Boku";
+position: absolute;
+left: 15vh;
+display: flex;
+width: 40vh;
+text-align: justify;
+text-align-last: justify;
+flex-direction: column;
+font-size: 1.5vw;
+top: 65vh;
+
+}
+
+
+
+.p6{
+font-family: "Yuji Boku";
+position: absolute;
+right: 7vh;
+width: 30vh;
+font-size: 1.5vw;
+top: 30vh;
+letter-spacing: 0.1em;
+}
+
+.p7{
+font-family: "Yuji Boku";
+position: absolute;
+right: 8vh;
+width: 40vh;
+font-size: 1.5vw;
+top: 35vh;
+letter-spacing: 0.1em;
+}
+
+.p8{
+font-family: "Yuji Boku";
+position: absolute;
+right: 15vh;
+width: 45vh;
+font-size: 1.5vw;
+top: 47vh;
+letter-spacing: 0.1em;
+}
+
+
+.p9{
+font-family: "Yuji Boku";
+position: absolute;
+right: 5vh;
+width: 30vh;
+font-size: 1.5vw;
+top: 60vh;
+letter-spacing: 0.1em;
+}
+
+.p10{
+font-family: "Yuji Boku";
+position: absolute;
+right: 10vh;
+width: 37vh;
+font-size: 1.5vw;
+top: 65vh;
+letter-spacing: 0.1em;
+}
+
+
+.textoInicioOculto{
+   visibility: hidden;
+   transition: all 0s ease;
+   opacity: 0%;
+}
+
+.textoInicio{
+   visibility: visible;
+   opacity: 100%;
+   transition: all 2.5s ease;
+}
